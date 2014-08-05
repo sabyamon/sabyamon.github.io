@@ -1,5 +1,18 @@
-<html>
-<body>
-	Hello
+<html ng-app="phonecatApp">
+<head>
+  
+  <script src="js/angular.js"></script>
+  <script src="app/js/controller.js"></script>
+  
+</head>
+<body ng-controller="PhoneListCtrl">
+
+  <ul>
+    <li ng-repeat="phone in phones">
+      {{phone.name}}
+      <p>{{phone.snippet}}</p>
+    </li>
+  </ul>
+
 </body>
 </html>
